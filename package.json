@@ -1,7 +1,7 @@
 {
-  "name": "write-project-name-here",
-  "version": "1.0.0",
-  "description": "write-project-description-here",
+  "name": "Visualization-Dashboard",
+  "version": "0.0.1",
+  "description": "An internship project for selection as a junior front end web developer intern",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "which-remote-repository-this-project-is-in"
+    "url": "https://arhan-kamra.github.io/Visualization-Dashboard/"
   },
   "keywords": [],
-  "author": "name-of-the-programmer-building-this-website",
+  "author": "Arhan Kamra",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/FrontEndDev-Arhan/flexbox.html/issues"
+    "url": "https://github.com/Arhan-Kamra/Visualization-Dashboard/issues"
   },
-  "homepage": "https://github.com/FrontEndDev-Arhan/flexbox.html#readme",
+  "homepage": "https://github.com/Arhan-Kamra/Visualization-Dashboard#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "browser-sync": "^2.26.13",
