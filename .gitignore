@@ -1,0 +1,7 @@
+/bower_components/
+/node_modules/
+/vendors/
+
+package-lock.json
+bower.json
+LICENSE
