@@ -1,7 +1,7 @@
 // Requires the gulp plugin
 const gulp = require('gulp');
-// Requires the gulp-sass plugin
-const sass = require('gulp-sass');
+// Requires the gulp-dart-sass plugin
+const sass = require('gulp-dart-sass');
 // Requires the browser-sync plugin
 const browserSync = require('browser-sync').create();
 // Requires the gulp-useref plugin

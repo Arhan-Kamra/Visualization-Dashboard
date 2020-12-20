@@ -1,5 +1,6 @@
 /** @format */
-@import "base/normalize", "base/main", "base/base";
-@import "base/typography", "sass-utils/variables", "sass-utils/mixins",
-  "../../vendors/js-css__libraries/bourbon/core/bourbon",
-  "../../vendors/js-css__libraries/breakpoint-sass/stylesheets/breakpoint";
+@use "base/normalize";
+@use "base/main";
+@use "base/base";
+
+@use "../../vendors/js-css__libraries/bootstrap/scss/bootstrap";
