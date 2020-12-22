@@ -1,0 +1,44 @@
+      <div class="container">
+        <!-- Row 3 starts here -->
+        <div class="row">
+          <div class="col-sm-6 text-center text-sm-left">
+            <img
+              src="https://picsum.photos/240/180"
+              alt="An Image placeholder"
+              class="mt-5 mb-4 img-fluid"
+            />
+          </div>
+          <div class="col-sm-6">
+            <h1 class="mt-5 h3">Lorem ipsum dolor sit amet.</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At optio
+              nulla quis quibusdam quo reprehenderit nesciunt neque itaque,
+              consectetur amet adipisci quasi? Quod dicta rerum laborum,
+              distinctio ullam ab dolorem.Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. At optio nulla quis quibusdam quo
+              reprehenderit nesciunt neque itaque, consectetur amet adipisci
+              quasi? Quod dicta rerum laborum, distinctio ullam ab dolorem.
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <h1 class="mt-5 h3">Lorem ipsum dolor sit amet.</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. At optio
+              nulla quis quibusdam quo reprehenderit nesciunt neque itaque,
+              consectetur amet adipisci quasi? Quod dicta rerum laborum,
+              distinctio ullam ab dolorem.Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. At optio nulla quis quibusdam quo
+              reprehenderit nesciunt neque itaque, consectetur amet adipisci
+              quasi? Quod dicta rerum laborum, distinctio ullam ab dolorem.
+            </p>
+          </div>
+          <div class="col-sm-6 text-center text-sm-left text-md-right">
+            <img
+              src="https://picsum.photos/240/180"
+              alt="An Image placeholder"
+              class="mt-5 mb-4 img-fluid"
+            />
+          </div>
+        </div>
+        <!-- Row 3 ends here -->
+      </div>

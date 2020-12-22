@@ -1,6 +1,8 @@
+@use "../sass-utils/variables" as var;
+
 header {
   .container {
-    background-color: #f8f8f8;
+    background-color: var.$container-color;
 
     .row {
       padding: 0 1.4rem;
@@ -9,13 +11,20 @@ header {
 
   a,
   li {
-    color: #777;
+    color: var.$links-color;
     font-weight: 500;
     padding: 1.4rem 0;
   }
 }
 
-.wrap-headline {
-  background-image: url("https://picsum.photos/1200/500");
-  background-size: cover;
+.intro-header {
+  .container {
+    background-image: url("https://picsum.photos/1200/500");
+    background-size: cover;
+  }
+
+  .wrap.headline {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
 }

@@ -1,0 +1,100 @@
+
+RewriteOptions inherit
+# With code below you can use a custom 404 error page Related code starts here
+ErrorDocument 404 /errors/404.html
+
+# With code below you can use a custom 403 error page  Related code starts here
+ErrorDocument 403 /errors/403.html
+
+# With code below you can redirect /index.html to the root domain
+RewriteRule ^index\.html$ / [NC,R,L]
+
+# DirectoryIndex
+# DirectoryIndex index.html page-down.html
+
+# IndexIgnore
+# IndexIgnore /images/*.jpg
+
+# DO 301 / 302 / 303 DIRECTS AS DESCRIBED BELOW WHEN NEEDED
+# So for example, if you want to move a file called productreview.html from the root of your site to a subdirectory called products you would use :
+
+# Redirect 301 /productreview.html http://www.yoursite.com/products/productreview.html
+
+# How to setup a 301 Redirect
+
+# If you have moved your domain to another site you may want to redirect the whole site.
+
+# To so this you simply use the following code:
+
+# Redirect 301 / http://www.newdomainname.com/
+
+#ban users from visiting the site
+order allow,deny
+# deny from 123.45.6.7
+# deny from 987.65.4.3
+# deny from 56.45.34.456
+allow from all
+
+# Block people seeing the htaccess file
+<Files .htaccess>
+order deny,allow
+deny from all
+</Files>
+
+# DISABLE DIRECTORY INDEXES
+# Options -Indexes
+
+# Default code  Default code starts here
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://about-me.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://about-me.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://contact-me.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://contact-me.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://personal.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://personal.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.about-me.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.about-me.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.contact-me.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.contact-me.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.personal.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.personal.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://about-me.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://about-me.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://contact-me.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://contact-me.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://personal.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://personal.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.about-me.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.about-me.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.contact-me.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.contact-me.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.frontenddev-arhan.tk$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.personal.frontenddev-arhan.tk/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.personal.frontenddev-arhan.tk$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp|mp3|mp4|svg)$ http://www.frontenddev-arhan.tk [R,NC]
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^frontenddev\-arhan\.tk$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.frontenddev\-arhan\.tk$
+RewriteRule ^/?$ "https\:\/\/frontenddev\-arhan\.tk\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^index\.html$ "https\:\/\/frontenddev\-arhan\.tk\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^make\-the\-form\.tk$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.make\-the\-form\.tk$
+RewriteRule ^/?$ "https\:\/\/make\-the\-form\.tk" [R=301,L]
+
+AddType text/html chocolate icecream

@@ -3,13 +3,15 @@
 @use "base/normalize";
 @use "base/main";
 @use "base/base";
-@use "base/variables-configured";
 
 // Libraries Imports
 @use "../../vendors/js-css__libraries/bootstrap/scss/bootstrap";
 
 // Page Imports
 @use "pages/index";
+
+// Sass utilities Imports
+@use "sass-utils/variables" as var;
 
 // Layout Imports
 @use "layout/header";

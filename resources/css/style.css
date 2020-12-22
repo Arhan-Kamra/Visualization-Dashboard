@@ -10882,9 +10882,13 @@ header li {
   padding: 1.4rem 0;
 }
 
-.wrap-headline {
+.intro-header .container {
   background-image: url("https://picsum.photos/1200/500");
   background-size: cover;
+}
+.intro-header .wrap.headline {
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 /** @format */
