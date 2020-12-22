@@ -31,7 +31,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/usm/popper.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -39,23 +39,239 @@
 
   <body>
     <!-- Add your site or application content here -->
-    <!-- Container tag starts here -->
-    <div class="container">
-      <!-- Jumbotron starts here -->
-      <div class="jumbotron">
-        <h1>hello world</h1>
-        <p>a simple bootstrap paragraph, learning very thoroughly</p>
-        <a
-          class="btn btn-primary btn-lg"
-          href="./index2.html"
-          title="go to second web node"
-          role="button"
-          >second page</a
-        >
+    <!-- Jumbotron tag starts here -->
+    <div class="jumbotron">
+      <!-- Container tag starts here -->
+      <div class="container text-white lead font-weight-bold">
+        <!-- Row 1 starts here -->
+        <header class="row">
+          <div class="col-12">
+            <h1 class="h2 text-dark">A simple landing page example</h1>
+            <h2 class="h3 text-muted">Subtitle for support</h2>
+            <a
+              class="btn btn-outline-blue font-weight-bold"
+              href="./index2.html"
+              title="Go to index2.html"
+              >Link</a
+            >
+          </div>
+        </header>
+        <!-- Row 1 ends here -->
       </div>
-      <!-- Jumbotron starts here -->
+      <!-- Container tag ends here -->
+    </div>
+    <!-- Jumbotron tag ends here -->
+    <!-- Container tag 2 starts here -->
+    <div class="container">
+      <!-- Row 2 starts here -->
+      <section class="row mt-4">
+        <div class="offset-md-4 col-md-4">
+          <h3>Some text with<small class="ml-2">secondary text</small></h3>
+        </div>
+        <div class="col-md-4">
+          <h3>
+            Add to your favorites<small class="ml-2"
+              ><kbd class="text-nowrap"
+                ><kbd>ctrl</kbd> + <kbd>d</kbd></kbd
+              ></small
+            >
+          </h3>
+        </div>
+      </section>
+      <!-- Row 2 ends here -->
+      <!-- Row 3 starts here -->
+      <section class="row mt-4">
+        <div class="col-5 col-md-4">
+          <pre>
+Lorem, ipsum dolor sit amet
+Lorem, ipsum dolor
+Lorem, ipsum dolor sit
+Lorem, ipsum dolor
+Lorem
+Lorem, ipsum
+          </pre>
+        </div>
+        <div class="col-7 col-md-8">
+          <img
+            class="img-fluid d-none d-md-block"
+            src="https://picsum.photos/576/200"
+            title="An Image placeholder"
+            alt=""
+          />
+          <img
+            class="img-fluid d-md-none"
+            src="https://picsum.photos/400/400"
+            title="An Image placeholder"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- Row 3 ends here -->
+      <!-- Row 4 starts here -->
+      <section class="row mt-4">
+        <div class="col-md-3">
+          <img src="https://picsum.photos/100/100" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              numquam.
+            </p>
+            <footer class="blockquote-footer">
+              - Testimonial from someone of
+              <cite title="some Author">Source Title</cite>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="col-md-3">
+          <img src="https://picsum.photos/200/100" alt="" class="img-fluid" />
+        </div>
+      </section>
+      <!-- Row 4 ends here -->
+      <!-- Row 5 starts here -->
+      <section class="row mt-4">
+        <div class="col-md-3">
+          <h3>Lowercase</h3>
+          <p class="text-lowercase">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            nemo quod libero ipsam unde. Doloribus unde aut minus dolores
+            dignissimos perspiciatis laboriosam reiciendis facilis placeat.
+            Distinctio facere veniam minus laboriosam!
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Uppercase</h3>
+              <p class="text-uppercase">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium nemo quod libero ipsam unde. Doloribus unde aut
+                minus dolores dignissimos perspiciatis laboriosam reiciendis
+                facilis placeat. Distinctio facere veniam minus laboriosam!
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3>Capitalize</h3>
+              <p class="text-capitalize">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium nemo quod libero ipsam unde. Doloribus unde aut
+                minus dolores dignissimos perspiciatis laboriosam reiciendis
+                facilis placeat. Distinctio facere veniam minus laboriosam!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3>Strong and Italic</h3>
+          <p>
+            Lorem ipsum dolor sit amet
+            <strong>consectetur adipisicing elit</strong>. Praesentium nemo quod
+            libero ipsam unde. Doloribus unde aut minus dolores dignissimos
+            perspiciatis laboriosam reiciendis facilis placeat.
+            <em>Distinctio facere</em> veniam minus laboriosam!
+          </p>
+        </div>
+      </section>
+      <!-- Row 5 ends here -->
+      <!-- Row 6 starts here -->
+      <section class="row">
+        <div class="col-md-10 offset-md-1">
+          <table
+            class="table table-bordered table-hover table-striped table-responsive-sm table-dark"
+          >
+            <thead>
+              <tr>
+                <th class="text-capitalize text-center bg-success">
+                  <h3>free plan</h3>
+                </th>
+                <th class="text-capitalize text-center bg-info">
+                  <h3>standard plan</h3>
+                </th>
+                <th class="text-capitalize text-center bg-primary">
+                  <h3>premium plan</h3>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="text-center"><h4>$0</h4></th>
+                <th class="text-center"><h4>$99</h4></th>
+                <th class="text-center"><h4>$999</h4></th>
+              </tr>
+              <tr>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+              </tr>
+              <tr>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+              </tr>
+              <tr>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+              </tr>
+              <tr>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+              </tr>
+              <tr>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+                <td>lorem ipsum</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#" class="btn btn-block btn-success text-capitalize"
+                    >purchase</a
+                  >
+                </td>
+                <td>
+                  <a href="#" class="btn btn-block btn-info text-capitalize"
+                    >purchase</a
+                  >
+                </td>
+                <td>
+                  <a href="#" class="btn btn-block btn-primary text-capitalize"
+                    >purchase</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- Row 6 ends here -->
+      <!-- Row 7 starts here -->
+      <footer class="row jumbotron mt-4 rounded">
+        <div class="col-md-2">
+          <img src="https://picsum.photos/100/100" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-7">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">Home</li>
+            <li class="list-inline-item">About</li>
+            <li class="list-inline-item">Documentation</li>
+            <li class="list-inline-item">Github</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <address>
+            lorem 555 / m<br />
+            111333<br />
+            Posh<br />
+            Ocean
+          </address>
+        </div>
+      </footer>
+      <!-- Row 7 ends here -->
     </div>
     <!-- Container tag ends here -->
+
     <!-- build:js js/main.min.js -->
     <script src="resources/js/index.js"></script>
     <!--[if lt IE 9]>

@@ -1,0 +1,21 @@
+header {
+  .container {
+    background-color: #f8f8f8;
+
+    .row {
+      padding: 0 1.4rem;
+    }
+  }
+
+  a,
+  li {
+    color: #777;
+    font-weight: 500;
+    padding: 1.4rem 0;
+  }
+}
+
+.wrap-headline {
+  background-image: url("https://picsum.photos/1200/500");
+  background-size: cover;
+}

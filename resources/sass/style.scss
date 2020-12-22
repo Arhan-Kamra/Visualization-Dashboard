@@ -1,6 +1,15 @@
 /** @format */
+// Base Imports
 @use "base/normalize";
 @use "base/main";
 @use "base/base";
+@use "base/variables-configured";
 
+// Libraries Imports
 @use "../../vendors/js-css__libraries/bootstrap/scss/bootstrap";
+
+// Page Imports
+@use "pages/index";
+
+// Layout Imports
+@use "layout/header";
