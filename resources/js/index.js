@@ -87,7 +87,3 @@ function addon() {
     fetchBtn2.click();
   }, timeTwice);
 })();
-
-window.alert('hello');
-window.aler('t is missing');
-window.alert('world');
