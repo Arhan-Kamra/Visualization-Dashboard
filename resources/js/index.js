@@ -5,7 +5,7 @@ const fetchBtn = document.querySelector('.fetch');
 fetchBtn.style.display = 'block';
 const aboutPlaceholder = document.querySelector('.about');
 
-function fetchData() {
+function fetchText() {
   const response = fetch(htmlResourceUrl);
   response
     .then((data) => data.text())
@@ -24,7 +24,7 @@ const fetchBtn2 = document.querySelector('.fetch2');
 fetchBtn2.style.display = 'block';
 const aboutPlaceholder2 = document.querySelector('.about2');
 
-const fetchData2 = function () {
+const fetchTable = function () {
   const response = fetch(htmlResourceUrl2);
   response
     .then((data) => data.json())
@@ -41,3 +41,53 @@ const fetchData2 = function () {
         (aboutPlaceholder2.innerHTML = `data could not be fetched due to Error: ${error}`)
     );
 };
+
+const str = document.querySelector('.str');
+const find = document.querySelector('.find');
+const find2 = document.querySelector('.find2');
+const regex2 = /i/g;
+function findText() {
+  if (regex2.test(str)) {
+    find.innerHTML =
+      "<b>here are your instances of 'i''s in the above paragraph</b>";
+  }
+}
+
+let count = 0;
+
+function addon() {
+  find2.innerHTML = `<em class="p-2 lead font-weight-bold bg-light">${count} is my favorite number</em>`;
+}
+
+(function stopCount(addIt) {
+  const time = 3;
+  const interval = setInterval(() => {
+    find2.innerHTML = count;
+    // eslint-disable-next-line no-plusplus
+    count++;
+  }, time);
+
+  setInterval(() => {
+    if (count === 360) {
+      clearInterval(interval);
+      addIt();
+    }
+  }, time);
+})(addon);
+
+// eslint-disable-next-line no-unused-expressions
+!(function autoClickBtn() {
+  const time = 3000;
+  const timeTwice = 5000;
+  setTimeout(() => {
+    fetchBtn.click();
+  }, time);
+
+  setTimeout(() => {
+    fetchBtn2.click();
+  }, timeTwice);
+})();
+
+window.alert('hello');
+window.aler('t is missing');
+window.alert('world');

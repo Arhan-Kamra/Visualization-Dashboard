@@ -1,5 +1,4 @@
 {
-  "name": "Visualization-Dashboard",
   "version": "0.0.1",
   "description": "An internship project for selection as a junior front end web developer intern",
   "main": "index.js",
@@ -42,6 +41,7 @@
     "gulp-cssnano": "^2.1.3",
     "gulp-csso": "^4.0.1",
     "gulp-dart-sass": "^1.0.2",
+    "gulp-dest": "^0.2.3",
     "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",

@@ -1,0 +1,73 @@
+{
+ "bands": [
+ {
+ "name": "Metallica",
+ "description": "Metallica is an American heavy metal band. The band was formed in 1981 in Los Angeles by vocalist/guitarist James Hetfield and drummer Lars Ulrich, and has been based in San Francisco for most of its career.",
+ "image": "metallica.jpg",
+ "year_established": 1981,
+ "albums": [{
+ "name": "Kill 'Em All",
+ "year": 1983
+ },
+ {
+ "name": "Ride the Lightning",
+ "year": 1984
+ }
+ ]
+ }, 
+ {
+ "name": "U2",
+ "description": "U2 are an Irish rock band from Dublin, formed in 1976. The group consists of Bono (lead vocals and rhythm guitar), the Edge (lead guitar, keyboards, and backing vocals), Adam Clayton (bass guitar), and Larry Mullen Jr. (drums and percussion).",
+ "image": "u2.jpg",
+ "year_established": 1976,
+ "albums": [{
+ "name": "Boy",
+ "year": 1980
+ },
+ {
+ "name": "October",
+ "year": 1981
+ }
+ ]
+ },
+ {
+ "name": "Abba",
+ "description": "ABBA are a Swedish pop group formed in Stockholm in 1972 by Agnetha Fältskog, Björn Ulvaeus, Benny Andersson, and Anni-Frid Lyngstad.",
+ "image": "abba.jpg",
+ "year_established": 1972,
+ "albums": [{
+ "name": "Ring Ring",
+ "year": 1973
+ },
+ {
+ "name": "Waterloo",
+ "year": 1974
+ },
+ {
+ "name": "ABBA",
+ "year": 1975
+ }
+ ]
+ },
+ {
+ "name": "Imagine Dragons",
+ "description": "Imagine Dragons is an American pop rock band from Las Vegas, Nevada, consisting of lead vocalist Dan Reynolds, lead guitarist Wayne Sermon, bassist Ben McKee, and drummer Daniel Platzman.",
+ "image": "imagine_dragons.jpg",
+ "year_established": 2008,
+ "albums": [{
+ "name": "Night Visions",
+ "year": 2012
+ },
+ {
+ "name": "Smoke + Mirrors",
+ "year": 2015
+ },
+ {
+ "name": "Evolve",
+ "year": 2017
+ }
+ ]
+ }
+ ]
+}
+
